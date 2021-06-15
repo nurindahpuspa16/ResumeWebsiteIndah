@@ -141,6 +141,7 @@ hr {
 .work-wrapper {
   border: 1px solid #666;
   border-radius: 2px;
+ 
   text-align: center;
   padding: 80px 40px 80px 40px;
   -webkit-transition: all 0.6s ease-in;
@@ -320,6 +321,24 @@ hr {
   float: right;
   padding-right: 80px;
 }
+
+.br {
+  display: inline-block;
+  color: #b5b5b5;
+
+}
+
+.br:before,
+.br:after {
+    border-top: 1px solid #b5b5b5;
+    display: block;
+    height: 1px;
+    content: " ";
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 3rem;
+}
 /* END RESUME */
 
 /* START ABOUT */
@@ -424,6 +443,9 @@ input { height: 50px; }
 /* START MEDIA 980 */
 @media screen and (max-width:980px){
   .portfolio-overlay  { padding-top: 10px; }
+  .work-wrapper {
+    height: 600px;
+  }
 }
 /* END MEDIA 980 */
 
@@ -436,6 +458,9 @@ input { height: 50px; }
   .tm-about {
     background: url('../images/bg.jpeg');
     background-size: cover;
+  }
+  .work-wrapper {
+    height: 600px;
   }
 }
 
